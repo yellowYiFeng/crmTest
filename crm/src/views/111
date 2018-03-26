@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页面详情</title>
+    <link rel="stylesheet" href="/stylesheets/paper.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_417612_wulrcg0xw4qp8pvi.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- <div class="text-center" id="img-wrap">
+    <img src="http://como.test.yunxuetang.com.cn/test/orgs/custom_page/custom_page_theme/custom_page_theme_img/201711/0577f40d29a94df787cd9b0eb19c4d1b.jpg" alt="">
+</div>
+
+<script>
+    $(function(){
+        var w = window.innerWidth;
+        var ml = - ( 1920 - w ) / 2 + 'px';
+        $('#img-wrap img').css('margin-left', ml);
+        $('body').css('overflow', 'auto');
+    })
+</script> -->
+
+<div class="img-bg" style="background: url(http://como.test.yunxuetang.com.cn/test/orgs/custom_page/custom_page_theme/custom_page_theme_img/201711/0577f40d29a94df787cd9b0eb19c4d1b.jpg) no-repeat center center; width:100%;"></div>
+<img id="img" src="http://como.test.yunxuetang.com.cn/test/orgs/custom_page/custom_page_theme/custom_page_theme_img/201711/0577f40d29a94df787cd9b0eb19c4d1b.jpg?hash=1517454373869" alt="" style="position: absolute;bottom:-10000px;">
+<script>
+    $(function(){
+        $('body').css('overflow', 'scroll');
+        document.getElementById("img").onload=function(){
+            var ww = window.innerWidth;
+            var w = $('img').width();
+            var h = $('img').height();
+            var nh = ww*h/w;
+            $('.img-bg').height(h);
+            console.log(nh);
+            $('img').hide();
+        };
+       
+    })
+</script></body>
+</html>
